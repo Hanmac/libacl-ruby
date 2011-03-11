@@ -1,0 +1,80 @@
+= libacl-ruby
+
+== Prerequesites
+
+In order to successfully install libacl-ruby, you need the following: 
+
+* Ruby >= 1.9.2
+* A C++ compiler (we use the {GNU project's}[http://www.gnu.org] <tt>g++</tt>)
+* libacl
+
+== How to install?
+
+=== RubyGems
+
+This is the easiest and preferred way. Ensure you have a proper built 
+environment for C++ code, and then do 
+
+  # gem install libacl-ruby
+
+=== Building from source
+
+If you want to be on the bleeding etch, clone the our 
+{git repository at GitHub}[https://github.com/Hanmac/libacl-ruby]: 
+
+  $ git clone https://github.com/Hanmac/libacl-ruby.git
+  $ cd libacl-ruby
+
+Then you can either choose to use the library from that directory by running 
+
+  $ rake compile
+
+or to make a gem and install that one. 
+
+  $ rake gem
+  # gem install --local pkg/libacl-ruby-x.x.x
+
+== How to use?
+
+First, you have to require the library: 
+
+  require "acl" #Note this is NOT "libacl-ruby"
+
+Then you can use the beautiful rubyish API: 
+
+  
+== Further reading
+
+Have a look at the documentation for the ACL and ACL::Entry classes 
+for more information. 
+
+== Contributors
+
+The following people have worked on libacl-ruby beside 
+me: 
+
+* Quintus <sutniuq ÄT gmx DÖT net> contributed to the docs
+
+== License
+
+libacl-ruby is a Ruby binding for the C library libacl. 
+
+Copyright © 2011 Hans Mackowiak
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+=== Contact
+
+You can read me via the email address hanmac ÄT gmx DÖT de. 
